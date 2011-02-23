@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="false"
+	xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss}|%-5p|%10c|%3x|%m%n" />
+		</layout>
+	</appender>
+
+	<logger name="org.bytesparadise.tools.jaxrs.sample">
+		<level value="debug" />
+	</logger>
+
+	<logger name="org.springframework">
+		<level value="warn" />
+	</logger>
+
+	<logger name="org.hibernate">
+		<level value="error" />
+	</logger>
+
+	<logger name="org.jboss.resteasy">
+		<level value="debug" />
+	</logger>
+
+	<root>
+		<level value="warn" />
+		<appender-ref ref="STDOUT" />
+	</root>
+</log4j:configuration>
