@@ -1,0 +1,12 @@
+This is a sample application that shows how JAX-RS and CDI work together. This sample application should be imported in an Eclipse workspace filled with the JBoss Tools 3.2 plugins. For more information on how to install those plugins, see here: http://community.jboss.org/en/tools/blog/2011/02/21/jboss-tools-32-is-finally-here . You should also download and install JBoss AS 6 (Final) since the sample application has all its dependencies on a JEE6 platform.
+
+Then, you can install the 'ride' plugin from the update site hosted here : http://bytesparadise.github.com/ride/update
+Once your Eclipse is ready, import the sample project, select the JBoss AS6 target runtime. All compilation errors should be fixed.
+In the 'Configure' project menu (popup), select 'Add Support for JAX-RS 1.1 ...' .
+The JAX-RS metamodel bound to the sample project should be built (an info message should be available in the 'Errors view'). If not, perform a project 'clean' or 'build'. 
+In the 'Project Explorer' configuration menu, select 'Customize view' and in the 'content' tab, make sure the 'RESTFul Web Services' extension is selected. Back to the project, you should see the 'RESTFul Mappings' navigator item, which displays all the JAX-RS URI Template Mappings \o/.
+
+From there, you can:
+- browse those mappings, see the URI Template, consumed and produced media types, and the corresponding Java Method that would serve the request. Oh, and yes, you can jump to the method and copy the URI Template into the clipboard.
+
+
